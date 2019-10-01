@@ -3,4 +3,6 @@
 
 @tailwind components;
 
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik:500&display=swap');
+
 @tailwind utilities;
