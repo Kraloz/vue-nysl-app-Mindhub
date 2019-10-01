@@ -1,12 +1,15 @@
+import '@/assets/css/tailwind.css'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
+
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import '@/assets/css/tailwind.css'
-
 Vue.config.productionTip = false
 
+Vue.component('v-icon', Icon)
 new Vue({
   router,
   store,
