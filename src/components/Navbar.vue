@@ -1,6 +1,6 @@
 <template>
   <div id="navbar" class="bg-harlequin fixed inset-x-0 bottom-0 h-12 container flex">
-    <navbar-tab to="/home" icon="home"/>
+    <navbar-tab to="/" icon="home"/>
     <navbar-tab to="/matches" icon="futbol"/>
     <navbar-tab to="/charts" icon="chart-bar"/>
     <navbar-tab to="/locations" icon="map-marked-alt"/>
