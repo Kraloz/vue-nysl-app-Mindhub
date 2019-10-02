@@ -3,7 +3,7 @@
       class="flex-1 flex justify-center items-center outline-none opacity-50"
       :to="to">
       <v-icon :name="icon" scale="1.45"/>
-    </router-link> 
+    </router-link>
 </template>
 
 <script>

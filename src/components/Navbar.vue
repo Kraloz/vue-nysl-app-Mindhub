@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" class="bg-harlequin inset-x-0 bottom-0 h-12 fixed container flex">
+  <div id="navbar" class="bg-harlequin fixed inset-x-0 bottom-0 h-12 container flex">
     <navbar-tab to="/home" icon="home"/>
     <navbar-tab to="/matches" icon="futbol"/>
     <navbar-tab to="/charts" icon="chart-bar"/>
