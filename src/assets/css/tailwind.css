@@ -1,12 +1,21 @@
 /* tailwind.css */
 @tailwind base;
-
 @tailwind components;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Rubik:500&display=swap');
 
+html {
+  background: #386374;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+  border-radius: 20px 20px 0 0;
 }
 
 @tailwind utilities;
