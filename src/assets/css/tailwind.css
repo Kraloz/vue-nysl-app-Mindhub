@@ -3,6 +3,10 @@
 
 @tailwind components;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rubik:500&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 @tailwind utilities;
