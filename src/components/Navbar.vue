@@ -22,5 +22,4 @@ export default {
   #navbar {
     border-radius: 1.25rem 1.25rem 0 0;
   }
-  
 </style>
