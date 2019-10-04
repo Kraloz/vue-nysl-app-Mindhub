@@ -1,8 +1,10 @@
 <template>
   <div id="app" class="h-full">
-    <the-appbar/>
-    <router-view class="pt-2 h-full container"/>
-    <the-navbar/>
+    <the-appbar id="appbar" class="z-50"/>
+    <router-view
+      id="content"
+      class="z-0 pt-24 pb-12 min-h-screen h-full w-full container"/>
+    <the-navbar id="navbar" class="z-50"/>
   </div>
 </template>
 
