@@ -10,7 +10,7 @@ import store from './store'
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyDnaA-js0O-9nIujHrUGIvLwhhLLQrKWOo',
+    key: 'process.env.VUE_G_KEY',
     libraries: 'places'
   }
 })
