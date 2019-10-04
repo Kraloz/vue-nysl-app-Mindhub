@@ -22,9 +22,69 @@
 <script>
 export default {
   name: 'TopScorersTable',
-  data() {
+  data () {
     return {
       players: [
+        {
+          name: 'Jose "Pepe" Argento',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Mónica "Moni" Potreli',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'María Elena Fuseneco',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Dardo Fuseneco',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Alfio "Coqui" Argento',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Paola Argento',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Jose "Pepe" Argento',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Mónica "Moni" Potreli',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'María Elena Fuseneco',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Dardo Fuseneco',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Alfio "Coqui" Argento',
+          team: 'U1',
+          goals: 15
+        },
+        {
+          name: 'Paola Argento',
+          team: 'U1',
+          goals: 15
+        },
         {
           name: 'Jose "Pepe" Argento',
           team: 'U1',

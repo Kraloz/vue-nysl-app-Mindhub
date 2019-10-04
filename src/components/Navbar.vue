@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" class="bg-harlequin fixed inset-x-0 bottom-0 h-12 container flex">
+  <div class="navbar bg-harlequin fixed inset-x-0 bottom-0 h-12 container flex">
     <navbar-tab to="/" icon="home"/>
     <navbar-tab to="/matches" icon="futbol"/>
     <navbar-tab to="/charts" icon="chart-bar"/>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-  #navbar {
+  .navbar {
     border-radius: 1.25rem 1.25rem 0 0;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div id="header" class="bg-bayoux fixed inset-x-0 top-0 h-24 container flex text-white">
+  <div>
+    <div class="bg-bayoux fixed inset-x-0 top-0 h-24 z-50 container flex text-white">
       <div class="flex w-full">
         <div class="flex-grow flex justify-center items-center">
           <h1 class="font-display text-3xl">Home NYSL</h1>
