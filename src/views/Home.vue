@@ -10,7 +10,6 @@
 
 <script>
 import MatchInfoCard from '@/components/MatchInfoCard.vue'
-
 export default {
   name: 'home',
   components: {
