@@ -1,16 +1,16 @@
 <template>
   <div>
-    <FixtureMonth/>
+    <matches-month-tab/>
   </div>
 </template>
 
 <script>
-import FixtureMonth from '@/components/FixtureMonth.vue'
+import MatchesMonthTab from '@/components/MatchesMonthTab.vue'
 
 export default {
   name: 'Matches',
   components: {
-    FixtureMonth
+    MatchesMonthTab
   }
 }
 </script>

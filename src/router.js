@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Matches from './views/Matches.vue'
 import Charts from './views/Charts.vue'
 import Locations from './views/Locations.vue'
+import Fixture from './views/Fixture.vue'
 
 Vue.use(Router)
 export default new Router({
@@ -21,13 +22,18 @@ export default new Router({
       component: Matches
     },
     {
+      path: '/matches/:month',
+      name: 'fixture',
+      component: Fixture
+    },
+    {
       path: '/charts',
-      name: 'Charts',
+      name: 'charts',
       component: Charts
     },
     {
       path: '/locations',
-      name: 'Locations',
+      name: 'locations',
       component: Locations
     }
   ]

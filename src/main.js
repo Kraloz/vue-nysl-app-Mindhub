@@ -10,6 +10,7 @@ import 'vue-awesome/icons/home'
 import 'vue-awesome/icons/futbol'
 import 'vue-awesome/icons/chart-bar'
 import 'vue-awesome/icons/map-marked-alt'
+import 'vue-awesome/icons/info'
 
 Vue.use(VueGoogleMaps, {
   load: {
