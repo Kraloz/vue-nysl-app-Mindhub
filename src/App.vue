@@ -22,11 +22,11 @@ export default {
   },
   data () {
     return {
-      transitionName : 'none'
+      transitionName: 'none'
     }
   },
   watch: {
-    $route(to, from) {
+    $route (to, from) {
       let toRoute = to.meta.index
       let fromRoute = from.meta.index
       if (toRoute === fromRoute || fromRoute === toRoute) {
