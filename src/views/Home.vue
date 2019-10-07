@@ -1,19 +1,19 @@
 <template>
   <div class="home">
     <div class="match-group h-full flex flex-col justify-center">
-      <MatchInfoCard/>
+      <next-match-card/>
       <hr class="mx-auto w-5/6 border-1 border-gray-500">
-      <MatchInfoCard/>
+      <next-match-card/>
     </div>
   </div>
 </template>
 
 <script>
-import MatchInfoCard from '@/components/MatchInfoCard.vue'
+import NextMatchCard from '@/components/NextMatchCard.vue'
 export default {
   name: 'home',
   components: {
-    MatchInfoCard
+    NextMatchCard
   }
 }
 </script>

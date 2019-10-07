@@ -19,6 +19,6 @@
 
 <script>
 export default {
-  name: 'MatchInfoCard'
+  name: 'NextMatchCard'
 }
 </script>
