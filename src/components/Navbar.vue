@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-  .navbar {
+  /* .navbar {
     border-radius: 1.25rem 1.25rem 0 0;
-  }
+  } */
 </style>

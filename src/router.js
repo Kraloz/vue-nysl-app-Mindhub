@@ -5,6 +5,7 @@ import Matches from './views/Matches.vue'
 import Charts from './views/Charts.vue'
 import Locations from './views/Locations.vue'
 import Fixture from './views/Fixture.vue'
+import MatchInfo from './views/MatchInfo.vue'
 
 Vue.use(Router)
 export default new Router({
@@ -28,6 +29,12 @@ export default new Router({
       name: 'fixture',
       component: Fixture,
       meta: { index: 1 }
+    },
+    {
+      path: '/match/:id',
+      name: 'matchInfo',
+      component: MatchInfo,
+      meta: { index: 2 }
     },
     {
       path: '/charts',

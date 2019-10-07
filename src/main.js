@@ -8,6 +8,7 @@ import 'vue-awesome/icons/futbol'
 import 'vue-awesome/icons/chart-bar'
 import 'vue-awesome/icons/map-marked-alt'
 import 'vue-awesome/icons/info'
+import 'vue-awesome/icons/map-marker-alt'
 
 import Vue from 'vue'
 import App from './App.vue'

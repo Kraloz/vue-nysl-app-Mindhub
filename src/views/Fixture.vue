@@ -5,7 +5,7 @@
         v-for="(month, i) in months" :key="i"
         class="w-full justify-between items-center tracking-tight w-full h-full flex-1 my-2 border-solid border-b border-gray-600"
       >
-        <match-fixture-card :month="month"/>
+        <match-fixture-card :id="i"/>
       </li>
     </ul>
   </div>

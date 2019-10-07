@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="{ name: 'fixture', params: { 'month': month.toLowerCase() }}"
+    :to="{ name: 'matchInfo', params: { 'id': id } }"
     class="flex ml-4 py-4 h-full w-full items-center justify-between"
   >
     <div class="flex flex-col justify-center">
@@ -19,6 +19,6 @@
 <script>
 export default {
   name: 'MatchFixtureCard',
-  props: ['month']
+  props: ['id']
 }
 </script>
