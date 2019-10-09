@@ -20,6 +20,6 @@
 <script>
 export default {
   name: 'MatchCard',
-  props: ['title','match']
+  props: ['title', 'match']
 }
 </script>
