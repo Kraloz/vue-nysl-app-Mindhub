@@ -30,32 +30,32 @@ export default {
         {
           name: 'Jose "Pepe" Argento',
           team: 'U1',
-          goals: 15
+          goals: 6
         },
         {
           name: 'Mónica "Moni" Potreli',
           team: 'U1',
-          goals: 15
+          goals: 5
         },
         {
           name: 'María Elena Fuseneco',
-          team: 'U1',
-          goals: 15
+          team: 'U2',
+          goals: 4
         },
         {
           name: 'Dardo Fuseneco',
-          team: 'U1',
-          goals: 15
+          team: 'U2',
+          goals: 3
         },
         {
           name: 'Alfio "Coqui" Argento',
           team: 'U1',
-          goals: 15
+          goals: 2
         },
         {
           name: 'Paola Argento',
           team: 'U1',
-          goals: 15
+          goals: 1
         }
       ]
     }
