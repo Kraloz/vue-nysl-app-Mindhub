@@ -1,15 +1,18 @@
 <template>
-    <div class="xd absolute">
-      <gmap-map
-        class="h-full"
-        :center="{lat:10, lng:10}"
-        :zoom="7"
-        :options="{disableDefaultUI:true}"
-        map-type-id="terrain"
-      >
-      </gmap-map>
+  <div class="xd absolute">
+    <gmap-map
+      class="h-full"
+      :center="{lat:10, lng:10}"
+      :zoom="7"
+      :options="{disableDefaultUI:true}"
+      map-type-id="terrain"
+    >
+    </gmap-map>
+    <div class="solapa w-full flex h-8 bg-mercury justify-center items-center">
+      <v-icon name="chevron-up" scale="1.45"/>
     </div>
-</template>
+  </div>
+</template> 
 
 <script>
 
@@ -20,6 +23,15 @@ export default {
 </script>
 
 <style scoped>
+
+  .solapa {
+    position: absolute;
+    overflow-y: hidden;
+    margin-top: -2rem;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -1px 20px rgba(0,0,0,0.19), 0 -4px 6px rgba(0,0,0,0.23);
+  }
+
   .vue-map-container,
   .vue-map-container .vue-map {
     /* border: 5px solid black; */
