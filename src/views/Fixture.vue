@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4">
+  <div class="mt-4 pb-32 overflow-y-scroll">
     <ul class="w-full pl-20 flex flex-col text-2xl">
       <li
         v-for="(month, i) in months" :key="i"
@@ -21,7 +21,7 @@ export default {
   },
   data () {
     return {
-      'months': ['October', 'November', 'December', 'January']
+      'months': ['October', 'November', 'December', 'January','October', 'November', 'December', 'January']
     }
   }
 }

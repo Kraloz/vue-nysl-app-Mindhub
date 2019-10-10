@@ -1,5 +1,5 @@
 <template>
-  <div class="xd absolute">
+  <div id="locations-view" class="absolute">
     <gmap-map
       class="h-full"
       :center="{lat:10, lng:10}"
@@ -8,30 +8,70 @@
       map-type-id="terrain"
     >
     </gmap-map>
-    <div class="solapa w-full flex h-8 bg-mercury justify-center items-center">
-      <v-icon name="chevron-up" scale="1.45"/>
-    </div>
+    <drawer-bottom>
+      <div class="flex flex-col mx-6 mt-6 pb-14">
+        <location-button
+          class="my-2 bg-gray-300"
+          v-for="(location, index) in locations"
+          :key="index"
+          :location="location"
+        />
+      </div>
+    </drawer-bottom>
   </div>
-</template> 
+</template>
 
 <script>
-
-// style="/*!width:100%; height:100%; max-height: 100%;min-height: 100%;*/"
+import DrawerBottom from '@/components/DrawerBottom.vue'
+import LocationButton from '@/components/LocationButton.vue'
 export default {
-  name: 'Locations'
+  name: 'Locations',
+  components: {
+    DrawerBottom,
+    LocationButton
+  },
+  data() {
+    return {
+      locations: [
+        {
+          name: 'AJ Katzenmaier Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        },
+        {
+          name: 'Greenbay Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        },
+        {
+          name: 'Howard A Yeager Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        },
+        {
+          name: 'Marjorie P Hart Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        },
+        {
+          name: 'AJ Katzenmaier Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        },
+        {
+          name: 'Greenbay Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        },
+        {
+          name: 'Howard A Yeager Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        },
+        {
+          name: 'Marjorie P Hart Elementary',
+          address: '24 W. Walton St., Chicago, IL 60610'
+        }
+      ]
+    }
+  }
 }
 </script>
 
 <style scoped>
-
-  .solapa {
-    position: absolute;
-    overflow-y: hidden;
-    margin-top: -2rem;
-    border-radius: 15px 15px 0 0;
-    box-shadow: 0 -1px 20px rgba(0,0,0,0.19), 0 -4px 6px rgba(0,0,0,0.23);
-  }
-
   .vue-map-container,
   .vue-map-container .vue-map {
     /* border: 5px solid black; */

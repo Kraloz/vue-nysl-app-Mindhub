@@ -26,11 +26,11 @@ export default {
       response: {
         match1: {
           teamA: {
-            logo: 'http://localhost:8080/img/boca.b276bd53.png',
+            logo: '@assets/images/boca.png',
             score: 1
           },
           teamB: {
-            logo: 'http://localhost:8080/img/boca.b276bd53.png',
+            logo: '@assets/images/boca.png',
             score: 1
           },
           location: 'Delgado 769',
@@ -39,11 +39,11 @@ export default {
         },
         match2: {
           teamA: {
-            logo: 'http://localhost:8080/img/boca.b276bd53.png',
+            logo: '@assets/images/boca.png',
             score: 1
           },
           teamB: {
-            logo: 'http://localhost:8080/img/boca.b276bd53.png',
+            logo: '@assets/images/boca.png',
             score: 1
           },
           location: 'Delgado 769',
