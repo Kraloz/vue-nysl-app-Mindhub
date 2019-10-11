@@ -21,7 +21,7 @@
 export default {
   name: 'MatchCard',
   props: ['title', 'match'],
-  data() {
+  data () {
     return {
       logos: {
         teamA: this.match.teamA.logo,
@@ -29,8 +29,8 @@ export default {
       }
     }
   },
-  created() {
-    const imageContext = require.context('@/assets/images', false, /.*\.png$/)    
+  created () {
+    const imageContext = require.context('@/assets/images', false, /.*\.png$/)
     const logos = this.logos
     for (const logoPath in logos) {
       if (logos.hasOwnProperty(logoPath)) {
