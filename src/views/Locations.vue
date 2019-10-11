@@ -30,7 +30,7 @@ export default {
     DrawerBottom,
     LocationButton
   },
-  data() {
+  data () {
     return {
       locations: [
         {

@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-y-scroll">
+  <div class="overflow-x-hidden overflow-y-scroll">
     <matches-month-tab/>
   </div>
 </template>
@@ -11,6 +11,18 @@ export default {
   name: 'Matches',
   components: {
     MatchesMonthTab
+  },
+  methods: {
+    toggleScrolleable () {
+      document.body.classList.toggle('overflow-y-hidden')
+      document.body.classList.toggle('overflow-y-scroll')
+    }
+  },
+  created () {
+    this.toggleScrolleable()
+  },
+  destroyed () {
+    this.toggleScrolleable()
   }
 }
 </script>
