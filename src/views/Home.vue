@@ -26,11 +26,11 @@ export default {
       response: {
         match1: {
           teamA: {
-            logo: '@assets/images/boca.png',
+            logo: 'boca.png',
             score: 1
           },
           teamB: {
-            logo: '@assets/images/boca.png',
+            logo: 'boca.png',
             score: 1
           },
           location: 'Delgado 769',
@@ -39,50 +39,11 @@ export default {
         },
         match2: {
           teamA: {
-            logo: '@assets/images/boca.png',
+            logo: 'boca.png',
             score: 1
           },
           teamB: {
-            logo: '@assets/images/boca.png',
-            score: 1
-          },
-          location: 'Delgado 769',
-          date: '11/10/2019',
-          time: '13:00 PM'
-        },
-        match3: {
-          teamA: {
-            logo: '@assets/images/boca.png',
-            score: 1
-          },
-          teamB: {
-            logo: '@assets/images/boca.png',
-            score: 1
-          },
-          location: 'Delgado 769',
-          date: '11/10/2019',
-          time: '13:00 PM'
-        },
-        match4: {
-          teamA: {
-            logo: '@assets/images/boca.png',
-            score: 1
-          },
-          teamB: {
-            logo: '@assets/images/boca.png',
-            score: 1
-          },
-          location: 'Delgado 769',
-          date: '11/10/2019',
-          time: '13:00 PM'
-        },
-        match5: {
-          teamA: {
-            logo: '@assets/images/boca.png',
-            score: 1
-          },
-          teamB: {
-            logo: '@assets/images/boca.png',
+            logo: 'boca.png',
             score: 1
           },
           location: 'Delgado 769',
