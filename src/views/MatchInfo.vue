@@ -49,8 +49,8 @@ export default {
     }
   },
   methods: {
-    goToLocation() {
-      
+    goToLocation () {
+
     }
   }
 }
@@ -60,7 +60,7 @@ export default {
   #minisheet {
     border-radius: 1.65rem 1.65rem 0 0;
   }
-  
+
   #stadium-container {
     margin-top: -1rem;
   }

@@ -28,6 +28,11 @@ export default {
       isActive: false
     }
   },
+  created () {
+    this.$on('closeDrawer', function (msg) {
+      this.toggleActive()
+    })
+  },
   methods: {
     toggleActive () {
       if (this.preload) this.preload = false

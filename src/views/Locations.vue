@@ -3,12 +3,10 @@
     <gmap-map
       class="h-full"
       :center="{
-        //lat:12.152242,
-        //lng:-1.734264
-        lat:41.9107828,
-        lng:-87.634767
+        lat: currentPosition.lat,
+        lng: currentPosition.lng
       }"
-      :zoom="12.75"
+      :zoom="currentPosition.zoom"
       :options="{disableDefaultUI:true}"
       map-type-id="terrain"
     >
@@ -35,10 +33,12 @@
     <drawer-bottom>
       <div class="flex flex-col mx-6 mt-6 pb-14">
         <location-button
-          class="my-2 bg-gray-300"
           v-for="(marker, index) in markers"
           :key="index"
+          :ref="`locationButton`"
+          class="my-2 bg-gray-300"
           :location="marker"
+          @click.native="locationHandler(marker, index)"
         />
       </div>
     </drawer-bottom>
@@ -55,28 +55,44 @@ export default {
     LocationButton
   },
   methods: {
-    markerInfo(marker) {
+    markerInfo (marker) {
       console.log(marker)
     },
-    getPosition: function(marker) {
+    getPosition (marker) {
       return {
         lat: parseFloat(marker.position.lat),
         lng: parseFloat(marker.position.lng)
       }
     },
-    toggleInfo: function(marker, key) {
-      this.infoPosition = this.getPosition(marker);
-      this.infoContent = marker.name;
-      if (this.infoCurrentKey == key) {
-        this.infoOpened = !this.infoOpened;
+    setPosition (marker) {
+      this.currentPosition.zoom = 5
+      let position = this.getPosition(marker)
+      this.currentPosition.lat = position.lat
+      this.currentPosition.lng = position.lng
+      this.currentPosition.zoom = 15.50
+    },
+    toggleInfo (marker, key) {
+      this.infoPosition = this.getPosition(marker)
+      this.infoContent = marker.name
+      if (this.infoCurrentKey === key) {
+        this.infoOpened = !this.infoOpened
       } else {
-        this.infoOpened = true;
-        this.infoCurrentKey = key;
+        this.infoOpened = true
+        this.infoCurrentKey = key
       }
+    },
+    locationHandler (marker, key) {
+      this.$refs.locationButton[key].$parent.$emit('closeDrawer')
+      this.setPosition(marker)
     }
   },
   data () {
     return {
+      currentPosition: {
+        lat: 41.9107828,
+        lng: -87.634767,
+        zoom: 12.75
+      },
       infoPosition: null,
       infoContent: null,
       infoOpened: false,
